@@ -163,23 +163,6 @@ export default function S3Metodologia() {
         </Cartao>
       </Reveal>
 
-      {/* Nota metodológica */}
-      <Reveal>
-        <h3 className="mt-8 mb-3 font-display text-xl font-bold text-terra-800">
-          {c.amostragem.notaMetodologica.titulo}
-        </h3>
-      </Reveal>
-      <div className="grid gap-3 md:grid-cols-2">
-        {c.amostragem.notaMetodologica.itens.map((n, i) => (
-          <Reveal key={n.titulo} delay={i * 70}>
-            <div className="h-full rounded-lg border border-areia-200 bg-white p-4">
-              <h4 className="font-display text-sm font-bold text-rubro-600">{n.titulo}</h4>
-              <p className="mt-1.5 text-xs leading-relaxed text-terra-800/85">{n.texto}</p>
-            </div>
-          </Reveal>
-        ))}
-      </div>
-
       {/* Coleta realizada */}
       <Reveal>
         <h2 className="mt-12 font-display text-2xl font-bold text-terra-800">{c.coleta.titulo}</h2>

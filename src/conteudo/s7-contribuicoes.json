@@ -32,10 +32,42 @@
         "eixo": "Prática / Gerencial",
         "destaque": true,
         "itens": [
-          "Primeiro diagnóstico documentado do público do Dance Forrónejo: perfil, motivações e atributos que sustentam a percepção de valor.",
-          "Identificação da facilidade de aprendizado como único atributo em atenção prioritária na IPA — alvo direto de ajuste pedagógico.",
-          "Evidência de que a descoberta ocorre exclusivamente pela grade interna da academia, com zero conversão por redes sociais, apesar do Instagram ser o canal declarado de preferência.",
-          "Mapeamento de demanda latente pelo canal de condomínio, declarada por 46,94% dos alunos de academia.",
+          {
+            "titulo": "O professor é o produto",
+            "texto": "Carisma e energia do professor lideram o ranking de importância nos dois grupos — 4,61 de 5,00 no QDF-A e 4,75 no QZ-C —, com 1,39 ponto de distância para o segundo atributo. Nos dois canais o professor ocupa posição sem equivalente competitivo: qualquer deterioração nessa percepção atinge o núcleo do serviço."
+          },
+          {
+            "titulo": "Essa percepção se constrói com o tempo, e o risco está na entrada",
+            "texto": "Veteranos de mais de 24 meses avaliam carisma em 97,4, contra 85,41 dos iniciantes — os 12 pontos são o maior gap de desempenho entre todos os grupos analisados. Alunos novos ainda não construíram essa percepção, e é nessa janela que o abandono ocorre."
+          },
+          {
+            "titulo": "Facilidade de aprendizado é o gargalo de conversão",
+            "texto": "Único atributo no quadrante de atenção prioritária da IPA do QDF-A: importância alta (3,48), desempenho baixo (87,3) e desvio-padrão elevado (19,2). Quem deseja aulas em condomínio avalia facilidade em 82,13 — 9,69 pontos abaixo de quem não deseja. A dificuldade percebida se concentra no segmento de maior demanda de expansão: um gargalo de produto que antecede o de canal."
+          },
+          {
+            "titulo": "Senso de comunidade é atributo latente, não declarado",
+            "texto": "Ocupa o último lugar no ranking de importância nos dois grupos (2,06 no QDF-A e 1,50 no QZ-C). Mas quem percebe custo-benefício máximo lhe atribui importância 4,0, contra 1,93 dos demais — o maior delta de importância entre grupos em todo o estudo. Estrutura a percepção de valor sem ser critério consciente de escolha."
+          },
+          {
+            "titulo": "Existe demanda por condomínio, e não existe oferta",
+            "texto": "46,94% dos alunos de academia apontam o condomínio como ambiente desejado. O Dance Forrónejo não mantém turmas regulares nesse canal — onde a Zumba já opera."
+          },
+          {
+            "titulo": "Terceiro lugar em custo-benefício dentro da academia",
+            "texto": "A modalidade acumula 41 pontos no ranking das atividades que mais compensam a mensalidade, atrás da musculação (77) e da própria Zumba (55)."
+          },
+          {
+            "titulo": "A descoberta é passiva e institucional",
+            "texto": "No QDF-A, 73,47% dos alunos chegaram pela grade de atividades do estabelecimento e nenhuma aluna chegou por redes sociais. No QZ-C, 54,55% vieram de recomendação pessoal. Os dois canais operam por mecanismos de descoberta estruturalmente distintos: um institucional, outro relacional."
+          },
+          {
+            "titulo": "O boca a boca existe, mas não tem estrutura",
+            "texto": "85,71% dos alunos de academia já recomendaram a modalidade, e apenas 54,76% dessas indicações resultaram em presença — contra 70,00% no condomínio. A não conversão de 45,24% sinaliza barreira logística: localização, horário ou acesso à academia específica onde a modalidade é ofertada."
+          },
+          {
+            "titulo": "Quem converte uma recomendação é mais jovem e mais digital",
+            "texto": "Mediana de 53 anos, contra 60,5 de quem recomendou sem converter. Consomem mais vídeos curtos de coreografia (87% contra 58%) e usam mais Instagram (83% contra 77%)."
+          },
           "Recomendações estruturadas em formato 5W2H, vinculadas a cada achado e organizadas pelos 4 Ps."
         ]
       },
@@ -57,7 +89,8 @@
           "Permite direcionar a expansão da modalidade para os territórios onde o benefício social tem maior potencial de alcance."
         ]
       }
-    ]
+    ],
+    "_leiaMe": "Cada item pode ser um texto simples ou um objeto {titulo, texto} — o título aparece em destaque."
   },
   "limitacoes": {
     "titulo": "O que o estudo não permite afirmar",

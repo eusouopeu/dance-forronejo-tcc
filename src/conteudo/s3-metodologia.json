@@ -152,28 +152,7 @@
         "resultado": "60 respostas de 100 matriculados — taxa de resposta de 60%",
         "justificativa": "A não probabilidade está na escolha das turmas, não na dos alunos: dentro de cada turma não houve seleção, houve enumeração completa."
       }
-    ],
-    "notaMetodologica": {
-      "titulo": "Por que a fórmula não vale para os dois planos",
-      "itens": [
-        {
-          "titulo": "A fórmula pressupõe seleção probabilística",
-          "texto": "O dimensionamento de Barbetta (2012) deriva da distribuição amostral de uma proporção sob amostragem aleatória simples. “Margem de erro” e “nível de confiança” só têm significado quando cada elemento tem probabilidade conhecida e não nula de ser sorteado. Sob seleção intencional, a conta pode ser feita, mas o número resultante não carrega garantia inferencial alguma."
-        },
-        {
-          "titulo": "Num censo não existe erro amostral a dimensionar",
-          "texto": "Se o instrumento vai a 100% da população-alvo, a pergunta “quantos preciso?” não se coloca. A vulnerabilidade do desenho migra inteiramente para a não resposta: os 40 que não responderam podem diferir sistematicamente dos 60 que responderam, e isso é viés de cobertura, não erro de amostragem."
-        },
-        {
-          "titulo": "Conglomerados exigem correção pelo efeito de desenho",
-          "texto": "Alunos da mesma turma se parecem mais entre si do que com alunos de outras turmas — mesmo professor, mesmo horário, mesmo bairro. Essa correlação intraclasse (ρ) infla a variância, de modo que n = n_AAS × deff, com deff = 1 + (m̄ − 1)·ρ. Com turmas de ~15 alunos e ρ = 0,05, o mínimo do Plano A subiria de 143 para cerca de 243. Com ρ = 0,10, passaria de 340 — acima da própria população estimada."
-        },
-        {
-          "titulo": "Três a quatro conglomerados são poucos",
-          "texto": "O sorteio de apenas 3 a 4 instrutores deixa 2 a 3 graus de liberdade para estimar a variância entre conglomerados. Mesmo executado, o Plano A renderia inferência frágil: a literatura de amostragem costuma pedir dezenas de conglomerados para estimativas estáveis nesse nível."
-        }
-      ]
-    }
+    ]
   },
   "formula": {
     "rotulo": "Fórmula de dimensionamento — populações finitas (Barbetta, 2012)",
@@ -213,5 +192,29 @@
     "rotuloTotal": "respondentes obtidos",
     "rotuloMinimo": "de taxa de resposta — 60 dos 100 alunos matriculados nas oito turmas"
   },
-  "nota": "Coleta entre 8 e 16 de junho de 2026, por QR code presencial e link exclusivo por turma no WhatsApp. O TCLE é a primeira tela do instrumento, com aceite obrigatório. Conformidade com a Resolução CNS 510/2016 e com a LGPD."
+  "nota": "Coleta entre 8 e 16 de junho de 2026, por QR code presencial e link exclusivo por turma no WhatsApp. O TCLE é a primeira tela do instrumento, com aceite obrigatório. Conformidade com a Resolução CNS 510/2016 e com a LGPD.",
+  "secoesOcultas": {
+    "_leiaMe": "Conteúdo preservado, hoje fora da apresentação. As ressalvas essenciais seguem visíveis nos próprios cards dos planos.",
+    "notaMetodologica": {
+      "titulo": "Por que a fórmula não vale para os dois planos",
+      "itens": [
+        {
+          "titulo": "A fórmula pressupõe seleção probabilística",
+          "texto": "O dimensionamento de Barbetta (2012) deriva da distribuição amostral de uma proporção sob amostragem aleatória simples. “Margem de erro” e “nível de confiança” só têm significado quando cada elemento tem probabilidade conhecida e não nula de ser sorteado. Sob seleção intencional, a conta pode ser feita, mas o número resultante não carrega garantia inferencial alguma."
+        },
+        {
+          "titulo": "Num censo não existe erro amostral a dimensionar",
+          "texto": "Se o instrumento vai a 100% da população-alvo, a pergunta “quantos preciso?” não se coloca. A vulnerabilidade do desenho migra inteiramente para a não resposta: os 40 que não responderam podem diferir sistematicamente dos 60 que responderam, e isso é viés de cobertura, não erro de amostragem."
+        },
+        {
+          "titulo": "Conglomerados exigem correção pelo efeito de desenho",
+          "texto": "Alunos da mesma turma se parecem mais entre si do que com alunos de outras turmas — mesmo professor, mesmo horário, mesmo bairro. Essa correlação intraclasse (ρ) infla a variância, de modo que n = n_AAS × deff, com deff = 1 + (m̄ − 1)·ρ. Com turmas de ~15 alunos e ρ = 0,05, o mínimo do Plano A subiria de 143 para cerca de 243. Com ρ = 0,10, passaria de 340 — acima da própria população estimada."
+        },
+        {
+          "titulo": "Três a quatro conglomerados são poucos",
+          "texto": "O sorteio de apenas 3 a 4 instrutores deixa 2 a 3 graus de liberdade para estimar a variância entre conglomerados. Mesmo executado, o Plano A renderia inferência frágil: a literatura de amostragem costuma pedir dezenas de conglomerados para estimativas estáveis nesse nível."
+        }
+      ]
+    }
+  }
 }

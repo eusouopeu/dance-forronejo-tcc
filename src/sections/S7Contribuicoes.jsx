@@ -44,12 +44,23 @@ export default function S7Contribuicoes() {
               contagem={x.itens.length}
             >
               <ul className="divide-y divide-areia-200">
-                {x.itens.map((it) => (
-                  <li key={it} className="flex items-start gap-3 px-6 py-3.5">
-                    <span className="mt-2 h-1.5 w-1.5 shrink-0 rounded-full bg-ambar-400" />
-                    <p className="text-sm leading-relaxed text-terra-800">{it}</p>
-                  </li>
-                ))}
+                {x.itens.map((it) => {
+                  const titulo = typeof it === "string" ? null : it.titulo;
+                  const texto = typeof it === "string" ? it : it.texto;
+                  return (
+                    <li key={titulo ?? texto} className="flex items-start gap-3 px-6 py-3.5">
+                      <span className="mt-2 h-1.5 w-1.5 shrink-0 rounded-full bg-ambar-400" />
+                      <div className="min-w-0">
+                        {titulo && (
+                          <p className="font-display text-sm font-bold text-terra-900">{titulo}</p>
+                        )}
+                        <p className={`text-sm leading-relaxed text-terra-800 ${titulo ? "mt-0.5" : ""}`}>
+                          {texto}
+                        </p>
+                      </div>
+                    </li>
+                  );
+                })}
               </ul>
             </Sanfona>
           </Reveal>
