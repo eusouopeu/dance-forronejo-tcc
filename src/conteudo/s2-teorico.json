@@ -1,0 +1,88 @@
+{
+  "_leiaMe": "Aba 02. 'grupos' define as abas de filtro e a cor de cada camada; 'rotuloTodos' é o último filtro.",
+  "introducao": "O trabalho não constrói teoria nova: ele aplica um instrumental consolidado de marketing a um caso real sob modelo B2B2C. Os conceitos abaixo organizam-se em três camadas — o que se investiga, com que ferramentas se lê o ambiente e como se tratam os dados.",
+  "grupos": [
+    {
+      "nome": "Núcleo conceitual",
+      "cor": "terra"
+    },
+    {
+      "nome": "Diagnóstico do ambiente",
+      "cor": "brasa"
+    },
+    {
+      "nome": "Instrumental analítico",
+      "cor": "ambar"
+    }
+  ],
+  "rotuloTodos": "Todos",
+  "conceitos": [
+    {
+      "termo": "Composto de marketing (4 Ps)",
+      "grupo": "Núcleo conceitual",
+      "definicao": "Conjunto de ferramentas — produto, preço, praça e promoção — que a empresa combina para produzir a resposta desejada no mercado-alvo. Estrutura as cinco dimensões de análise desta pesquisa, somada à dimensão Consumidor.",
+      "fonte": "KOTLER; KELLER (2018); LAS CASAS (2019)"
+    },
+    {
+      "termo": "Pesquisa de marketing",
+      "grupo": "Núcleo conceitual",
+      "definicao": "Identificação, coleta, análise e disseminação sistemática de informações para melhorar a tomada de decisão em marketing. Fornece a cadeia dedutiva problema gerencial → problema de marketing → problema de pesquisa.",
+      "fonte": "MALHOTRA (2019)"
+    },
+    {
+      "termo": "Brand awareness / valor de marca",
+      "grupo": "Núcleo conceitual",
+      "definicao": "Capacidade do consumidor de reconhecer e recordar a marca e o valor diferencial que esse conhecimento agrega à resposta ao produto. É a variável-alvo do problema gerencial da marca.",
+      "fonte": "KOTLER; KELLER (2018)"
+    },
+    {
+      "termo": "Modelo B2B2C",
+      "grupo": "Núcleo conceitual",
+      "definicao": "Arranjo em que o cliente pagante direto é o instrutor credenciado, enquanto o aluno é o consumidor final que valida a proposta de valor. Justifica a coleta junto ao aluno como evidência indireta sobre o elo B2B.",
+      "fonte": "Diagnóstico do ambiente (Cap. 2); VERA; PESSINA (2021)"
+    },
+    {
+      "termo": "Análise PESTEL",
+      "grupo": "Diagnóstico do ambiente",
+      "definicao": "Mapeamento das forças políticas, econômicas, sociais, tecnológicas, ambientais e legais que incidem sobre o setor, delimitando o macroambiente do negócio.",
+      "fonte": "Aplicada conforme MALHOTRA (2019) na etapa exploratória"
+    },
+    {
+      "termo": "Cinco Forças de Porter",
+      "grupo": "Diagnóstico do ambiente",
+      "definicao": "Modelo de análise da estrutura competitiva de um setor a partir da rivalidade interna, do poder de barganha de fornecedores e compradores, da ameaça de entrantes e da de substitutos.",
+      "fonte": "PORTER (2004)"
+    },
+    {
+      "termo": "Matriz SWOT",
+      "grupo": "Diagnóstico do ambiente",
+      "definicao": "Articulação entre forças e fraquezas internas e oportunidades e ameaças externas, usada aqui para caracterizar o microambiente da modalidade.",
+      "fonte": "KOTLER; KELLER (2018)"
+    },
+    {
+      "termo": "Teoria das Restrições e FCS",
+      "grupo": "Diagnóstico do ambiente",
+      "definicao": "Todo sistema produtivo possui ao menos um gargalo que limita seu ritmo de geração de valor. Os fatores críticos de sucesso são as condições sem as quais o negócio não opera competitivamente.",
+      "fonte": "GOLDRATT; COX (2002)"
+    },
+    {
+      "termo": "Análise Importância-Desempenho (IPA)",
+      "grupo": "Instrumental analítico",
+      "definicao": "Cruzamento entre importância declarada e desempenho percebido de cada atributo, posicionando-os em quatro quadrantes: manutenção, atenção prioritária, baixa prioridade e excesso relativo. Os cortes são as médias do próprio grupo.",
+      "fonte": "MARTILLA; JAMES (1977)"
+    },
+    {
+      "termo": "Escala de diferencial semântico",
+      "grupo": "Instrumental analítico",
+      "definicao": "Escala bipolar em que o respondente posiciona sua avaliação entre dois extremos opostos. Aqui, aplicada por controle deslizante de 0 a 100 aos nove atributos do core do serviço, produzindo escores contínuos comparáveis entre modalidades.",
+      "fonte": "MALHOTRA (2019)"
+    },
+    {
+      "termo": "Inferência estatística aplicada",
+      "grupo": "Instrumental analítico",
+      "definicao": "Qui-quadrado para associação entre nominais, Pearson e Spearman para correlação, ANOVA de um fator para comparação de médias e análise fatorial exploratória descritiva. Nível adotado: p < 0,05.",
+      "fonte": "FIELD (2018)"
+    }
+  ],
+  "nota": "Referências completas no capítulo 8 do relatório, em formato ABNT NBR 6023."
+}

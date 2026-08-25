@@ -1,0 +1,111 @@
+{
+  "_leiaMe": "Aba 05. Cada entrada de 'objetivos' vira um botão no seletor e uma linha da matriz.",
+  "introducao": "Cada objetivo específico governa uma dimensão do composto, que reúne um conjunto fechado de variáveis, mensuradas por itens determinados e tratadas por técnicas definidas a priori. Selecione um objetivo para percorrer a cadeia.",
+  "coresDimensao": {
+    "Consumidor": "terra",
+    "Produto": "brasa",
+    "Preço": "ambar",
+    "Praça": "milho",
+    "Promoção": "rubro",
+    "Qualitativa": "terraProfundo"
+  },
+  "rotulos": {
+    "variaveis": "Variáveis / categorias",
+    "itens": "Itens do instrumento",
+    "tecnica": "Técnica de análise",
+    "prefixoDimensao": "dimensão"
+  },
+  "matriz": {
+    "titulo": "A matriz completa",
+    "colunas": [
+      "OE",
+      "Dimensão",
+      "Pergunta orientadora",
+      "Itens",
+      "Técnica"
+    ]
+  },
+  "objetivos": [
+    {
+      "oe": "OE1",
+      "dimensao": "Consumidor",
+      "pergunta": "Quem é o aluno?",
+      "variaveis": [
+        "Idade",
+        "Identidade de gênero",
+        "Escolaridade",
+        "Tempo de prática",
+        "Portfólio de atividades",
+        "Localização"
+      ],
+      "itens": "02–05, 10 + parâmetro oculto",
+      "tecnica": "Sumarização univariada; χ²; ANOVA"
+    },
+    {
+      "oe": "OE2",
+      "dimensao": "Produto",
+      "pergunta": "O que ele valoriza e como avalia a entrega?",
+      "variaveis": [
+        "Importância declarada dos atributos",
+        "Desempenho percebido (9 atributos)",
+        "Fatores de adesão",
+        "Conforto da aula",
+        "Advocacy"
+      ],
+      "itens": "14, 16–19, 20–28",
+      "tecnica": "Soma de postos; IPA; gap competitivo; Pearson"
+    },
+    {
+      "oe": "OE3",
+      "dimensao": "Praça",
+      "pergunta": "Onde ele pratica e onde gostaria de praticar?",
+      "variaveis": [
+        "Canais atuais",
+        "Demanda latente",
+        "Conveniência logística",
+        "Pressão competitiva"
+      ],
+      "itens": "11–13 + RO-03, RO-04",
+      "tecnica": "Frequência relativa; Likert ponderada; ANOVA; Spearman"
+    },
+    {
+      "oe": "OE4",
+      "dimensao": "Preço",
+      "pergunta": "A mensalidade compensa?",
+      "variaveis": [
+        "Custo-benefício percebido",
+        "Custo-benefício comparado",
+        "Mensalidade praticada"
+      ],
+      "itens": "15 + RO-02",
+      "tecnica": "Frequência relativa; soma de postos; Spearman"
+    },
+    {
+      "oe": "OE5",
+      "dimensao": "Promoção",
+      "pergunta": "Como ele descobre e como quer ser comunicado?",
+      "variaveis": [
+        "Canal de descoberta",
+        "Acurácia da comunicação",
+        "Redes sociais",
+        "Formato de conteúdo",
+        "Engajamento"
+      ],
+      "itens": "06–09 + RO-05",
+      "tecnica": "Frequência relativa; χ²; ANOVA entre formatos"
+    },
+    {
+      "oe": "OE6 e OE7",
+      "dimensao": "Síntese",
+      "pergunta": "O que fazer com isso?",
+      "variaveis": [
+        "Cruzamento de todas as dimensões",
+        "Grupos estratégicos A–D",
+        "Comentários abertos"
+      ],
+      "itens": "Todos + item 29",
+      "tecnica": "Agrupamento descritivo; análise de conteúdo; 5W2H"
+    }
+  ],
+  "nota": "A matriz consolidada associa ainda cada variável ao seu tipo formal (nominal, ordinal, discreta, intervalar ou de razão) — Apêndice A do relatório."
+}

@@ -1,0 +1,111 @@
+{
+  "_leiaMe": "Aba 01. 'secoesOcultas' guarda blocos removidos da apresentação; o site não os exibe.",
+  "cascata": {
+    "titulo": "A cadeia dedutiva do problema",
+    "descricao": "Do que o gestor precisa decidir até o que a pesquisa consegue medir. Clique em cada nível.",
+    "cores": [
+      "terraEscuro",
+      "brasa",
+      "ambar"
+    ],
+    "etapas": [
+      {
+        "nivel": "Problema Gerencial",
+        "escopo": "Decisão do gestor",
+        "texto": "Como o Dance Forrónejo deve estruturar seu composto de marketing para acelerar o crescimento sustentado no mercado de dança fitness, ampliando simultaneamente a base de instrutores certificados e o brand awareness entre os consumidores finais, em particular no mercado primário de Salvador-BA?"
+      },
+      {
+        "nivel": "Problema de Marketing",
+        "escopo": "Recorte investigável",
+        "texto": "Quais elementos do composto de marketing do Dance Forrónejo são percebidos como relevantes por seus instrutores e alunos, e como essas percepções, articuladas ao perfil sociodemográfico e comportamental do público, podem orientar a captação de novos instrutores e a construção de brand awareness?"
+      },
+      {
+        "nivel": "Problema de Pesquisa",
+        "escopo": "Pergunta empírica",
+        "texto": "Como os alunos do Dance Forrónejo percebem, valorizam e se diferenciam em relação à proposta de valor da marca, em comparação às alternativas concorrentes e substitutas disponíveis em Salvador, e quais variáveis demográficas, motivacionais e contextuais explicam essa percepção de valor?"
+      }
+    ]
+  },
+  "objetivoGeral": {
+    "rotulo": "Objetivo geral",
+    "texto": "Mapear o perfil dos alunos do Dance Forrónejo e as variáveis do composto de marketing que mais influem em sua adesão à modalidade, de modo a possibilitar a otimização de recursos, a elaboração de estratégias de marketing e o aproveitamento de oportunidades de crescimento e de mercado."
+  },
+  "objetivosEspecificos": {
+    "titulo": "Objetivos específicos",
+    "descricao": "Cinco de mapeamento, dois de síntese. Cada um governa uma dimensão do modelo de análise.",
+    "itens": [
+      {
+        "id": "OE1",
+        "dim": "Consumidor",
+        "cor": "terra",
+        "texto": "Traçar quem é o aluno de Dance Forrónejo e de Zumba — idade, escolaridade, há quanto tempo pratica e o que mais faz — comparando academia e condomínio."
+      },
+      {
+        "id": "OE2",
+        "dim": "Produto",
+        "cor": "terra",
+        "texto": "Descobrir o que os alunos mais valorizam numa aula de dança fitness e quão bem cada modalidade entrega isso."
+      },
+      {
+        "id": "OE3",
+        "dim": "Praça",
+        "cor": "terra",
+        "texto": "Entender como os alunos avaliam o lugar onde praticam hoje e em que outros lugares gostariam de praticar."
+      },
+      {
+        "id": "OE4",
+        "dim": "Preço",
+        "cor": "rubro",
+        "texto": "Comparar o quanto cada modalidade compensa o valor pago, nos dois ambientes."
+      },
+      {
+        "id": "OE5",
+        "dim": "Promoção",
+        "cor": "rubro",
+        "texto": "Mapear como os alunos descobriram a modalidade e por quais canais e formatos preferem ser comunicados."
+      },
+      {
+        "id": "OE6",
+        "dim": "Síntese",
+        "cor": "brasaEscuro",
+        "texto": "Identificar os gargalos e as oportunidades de mercado do negócio."
+      },
+      {
+        "id": "OE7",
+        "dim": "Síntese",
+        "cor": "brasaEscuro",
+        "texto": "Propor estratégias de marketing para cada gargalo e oportunidade encontrados."
+      }
+    ]
+  },
+  "nota": "Fonte: seções 1.1 e 4 do relatório. A formulação do problema segue a cadeia dedutiva proposta por Malhotra (2019).",
+  "secoesOcultas": {
+    "_leiaMe": "Conteúdo preservado, hoje fora da apresentação.",
+    "questoesCorrelatas": {
+      "titulo": "Quatro questões correlatas",
+      "itens": [
+        "Qual é o perfil sociodemográfico e motivacional dos alunos?",
+        "Quais atributos da proposta de valor são percebidos como efetivamente distintivos?",
+        "Quais canais de distribuição e de promoção apresentam maior produtividade na conversão e na fidelização?",
+        "Qual é a percepção de custo-benefício da mensalidade entre os praticantes?"
+      ]
+    },
+    "pressupostos": {
+      "titulo": "Pressupostos assumidos",
+      "itens": [
+        {
+          "titulo": "Praça, Preço e Promoção como função do ambiente",
+          "texto": "Essas dimensões dependem majoritariamente da infraestrutura, da grade de horários e da política comercial do operador local, com pouco controle da modalidade ofertada."
+        },
+        {
+          "titulo": "Produto como função da modalidade",
+          "texto": "As variáveis de Produto refletem o conteúdo, a condução e a proposta pedagógica da modalidade, e não do estabelecimento que a hospeda."
+        },
+        {
+          "titulo": "Leitura como tendência, não como parâmetro",
+          "texto": "Com amostragem não probabilística e n = 60, percentuais e médias são indicadores de tendência dos grupos pesquisados — não estimativas populacionais."
+        }
+      ]
+    }
+  }
+}

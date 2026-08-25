@@ -1,0 +1,80 @@
+{
+  "_leiaMe": "Identificação do trabalho, abas da barra lateral e textos da moldura do site. Em cada seção: 'titulo' e 'subtitulo' aparecem na barra lateral; 'subtituloLongo' aparece no cabeçalho da aba; 'tempo' é a estimativa de fala.",
+  "meta": {
+    "titulo": "Dance Forrónejo",
+    "subtitulo": "Diagnóstico do composto de marketing e do valor de marca sob a perspectiva dos alunos em Salvador",
+    "autor": "Pedro Caio Feitosa Teles",
+    "curso": "Bacharelado em Administração — Escola de Administração, UFBA",
+    "ano": "2026"
+  },
+  "barraLateral": {
+    "_leiaMe": "corFundo e corAbaAtiva aceitam qualquer nome listado em src/tema.js.",
+    "corFundo": "brasaEscuro",
+    "corAbaAtiva": "terraEscuro",
+    "chapeu": "TCC · Administração · UFBA",
+    "dicaTeclado": "Use ← → para navegar entre as seções",
+    "rotuloAbrirMenu": "Abrir navegação"
+  },
+  "rodape": {
+    "inicio": "Início",
+    "fim": "Fim"
+  },
+  "secoes": [
+    {
+      "id": "estrutura",
+      "n": 1,
+      "titulo": "Estrutura da pesquisa",
+      "subtitulo": "Problema, questões e objetivos",
+      "tempo": "1min30",
+      "subtituloLongo": "Problema, questões, objetivos e pressupostos"
+    },
+    {
+      "id": "teorico",
+      "n": 2,
+      "titulo": "Quadro teórico",
+      "subtitulo": "Conceitos e fontes adotadas",
+      "tempo": "1min30",
+      "subtituloLongo": "Termos, conceitos e a definição adotada"
+    },
+    {
+      "id": "metodologia",
+      "n": 3,
+      "titulo": "Caracterização metodológica",
+      "subtitulo": "Tipo, instrumentos e coleta",
+      "tempo": "1min30",
+      "subtituloLongo": "Tipo, abordagem, instrumentos e coleta"
+    },
+    {
+      "id": "itens",
+      "n": 4,
+      "titulo": "Quadro de itens",
+      "subtitulo": "Do item à codificação",
+      "tempo": "1min30",
+      "subtituloLongo": "Do item do instrumento à regra de codificação"
+    },
+    {
+      "id": "modelo",
+      "n": 5,
+      "titulo": "Modelo de análise",
+      "subtitulo": "Objetivo ↔ dimensão ↔ item",
+      "tempo": "1min30",
+      "subtituloLongo": "Objetivo ↔ dimensão ↔ variáveis ↔ itens ↔ técnica"
+    },
+    {
+      "id": "tecnicas",
+      "n": 6,
+      "titulo": "Técnicas de análise",
+      "subtitulo": "Sumarização, associação, agrupamento",
+      "tempo": "1min30",
+      "subtituloLongo": "Como os dados coletados viram evidência"
+    },
+    {
+      "id": "contribuicoes",
+      "n": 7,
+      "titulo": "Contribuições esperadas",
+      "subtitulo": "Prática, acadêmica e social",
+      "tempo": "1min",
+      "subtituloLongo": "Prática, acadêmica e social"
+    }
+  ]
+}

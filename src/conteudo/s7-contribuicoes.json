@@ -1,0 +1,104 @@
+{
+  "_leiaMe": "Aba 07. Os blocos abrem recolhidos; 'destaque' pinta o eixo principal de laranja.",
+  "numeros": [
+    {
+      "valor": 46.94,
+      "sufixo": "%",
+      "decimais": 2,
+      "cor": "brasa",
+      "texto": "dos alunos de academia querem aulas em condomínio — canal sem oferta atual"
+    },
+    {
+      "valor": 85.71,
+      "sufixo": "%",
+      "decimais": 2,
+      "cor": "terraEscuro",
+      "texto": "recomendaram a modalidade, mas só 54,76% das indicações converteram"
+    },
+    {
+      "valor": 0,
+      "sufixo": "",
+      "decimais": 0,
+      "cor": "rubro",
+      "texto": "conversões vindas de redes sociais, apesar de o Instagram ser o canal preferido"
+    }
+  ],
+  "eixos": {
+    "titulo": "Os três eixos",
+    "descricao": "Clique em cada eixo para abrir.",
+    "rotuloDestaque": "contribuição principal",
+    "itens": [
+      {
+        "eixo": "Prática / Gerencial",
+        "destaque": true,
+        "itens": [
+          "Primeiro diagnóstico documentado do público do Dance Forrónejo: perfil, motivações e atributos que sustentam a percepção de valor.",
+          "Identificação da facilidade de aprendizado como único atributo em atenção prioritária na IPA — alvo direto de ajuste pedagógico.",
+          "Evidência de que a descoberta ocorre exclusivamente pela grade interna da academia, com zero conversão por redes sociais, apesar do Instagram ser o canal declarado de preferência.",
+          "Mapeamento de demanda latente pelo canal de condomínio, declarada por 46,94% dos alunos de academia.",
+          "Recomendações estruturadas em formato 5W2H, vinculadas a cada achado e organizadas pelos 4 Ps."
+        ]
+      },
+      {
+        "eixo": "Acadêmica",
+        "destaque": false,
+        "itens": [
+          "Preenche lacuna da literatura de marketing esportivo, concentrada em marcas de alcance global, sobre modalidades fitness de base regional.",
+          "Documenta a aplicação simultânea de PESTEL, Cinco Forças, SWOT e composto mercadológico a um caso real sob modelo B2B2C.",
+          "Amplia o escopo metodológico ao exigir instrumentos paralelos para dois públicos distintos dentro da mesma cadeia de valor."
+        ]
+      },
+      {
+        "eixo": "Social",
+        "destaque": false,
+        "itens": [
+          "Documenta o papel da dança em grupo como espaço de convívio e formação de laços para um público majoritariamente feminino e acima dos 45 anos.",
+          "Contribui para a revitalização da musicalidade regional nordestina fora da sazonalidade junina.",
+          "Permite direcionar a expansão da modalidade para os territórios onde o benefício social tem maior potencial de alcance."
+        ]
+      }
+    ]
+  },
+  "limitacoes": {
+    "titulo": "O que o estudo não permite afirmar",
+    "subtitulo": "limitações reconhecidas",
+    "itens": [
+      "Amostra de 60 respondentes, inferior ao mínimo de 114 calculado para erro de 5% e confiança de 95%.",
+      "Amostragem não probabilística por conveniência: os resultados descrevem os grupos pesquisados e não estimam parâmetros populacionais.",
+      "Comparação QDF-A × QZ-C cruza simultaneamente modalidade e canal — os efeitos não podem ser isolados.",
+      "Potencial viés de conivência pela proximidade entre pesquisador, gestor e respondentes, consistente com o efeito de teto observado.",
+      "Métricas de engajamento do Instagram são aproximação de dados públicos, sem acesso ao Instagram Insights."
+    ]
+  },
+  "agenda": {
+    "titulo": "Agenda de pesquisa futura",
+    "subtitulo": "cinco frentes abertas pelos achados",
+    "itens": [
+      {
+        "titulo": "Replicação com desenho controlado por canal",
+        "texto": "Aplicar QDF-C e QZ-A para separar efeito de modalidade e efeito de canal, hoje confundidos."
+      },
+      {
+        "titulo": "Teste de porta falsa para o canal de condomínio",
+        "texto": "Medir demanda revelada, e não apenas declarada, antes de uma decisão de expansão."
+      },
+      {
+        "titulo": "Teste A/B de conteúdo digital",
+        "texto": "Testar se volume e consistência de publicação — e não formato ou canal — explicam a ausência de conversão."
+      },
+      {
+        "titulo": "Estudo longitudinal de retenção",
+        "texto": "Duas ondas (3ª e 12ª semana) para testar se baixa facilidade percebida antecipa churn."
+      },
+      {
+        "titulo": "Pesquisa com instrutores credenciados",
+        "texto": "Mapear o público B2B — fonte de receita direta — não coberto neste ciclo."
+      }
+    ]
+  },
+  "fecho": {
+    "rotulo": "Em uma frase",
+    "texto": "O Dance Forrónejo é descoberto dentro da academia, sustentado pelo carisma do professor e limitado pela facilidade de aprendizado — e tem uma demanda de condomínio que ainda não atende."
+  },
+  "nota": "Fonte: capítulos 5, 6 e 7 do relatório. Percentuais referentes aos grupos pesquisados (QDF-A n = 49; QZ-C n = 11)."
+}

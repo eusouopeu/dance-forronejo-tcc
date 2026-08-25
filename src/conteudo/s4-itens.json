@@ -1,0 +1,341 @@
+{
+  "_leiaMe": "Aba 04. A ordem de 'colunas' define a ordem das colunas da tabela e deve casar com 'campos'.",
+  "introducao": {
+    "antes": "Cada item do questionário está amarrado a uma variável, a um tipo de escala e a uma regra de tratamento definida antes da coleta. Os códigos seguem o padrão",
+    "exemplos": [
+      "QDFA-02",
+      "QZC-15"
+    ],
+    "depois": ", com prefixo por modalidade e ambiente; itens",
+    "prefixoObservacao": "RO-",
+    "fim": "vêm do roteiro de observação."
+  },
+  "dimensoes": [
+    "Consumidor",
+    "Produto",
+    "Preço",
+    "Praça",
+    "Promoção",
+    "Qualitativa"
+  ],
+  "coresDimensao": {
+    "Consumidor": "terra",
+    "Produto": "brasa",
+    "Preço": "ambar",
+    "Praça": "milho",
+    "Promoção": "rubro",
+    "Qualitativa": "terraProfundo"
+  },
+  "rotuloTodas": "Todas",
+  "colunas": [
+    {
+      "titulo": "Item",
+      "campo": "cod"
+    },
+    {
+      "titulo": "Dimensão",
+      "campo": "dim"
+    },
+    {
+      "titulo": "Variável",
+      "campo": "variavel"
+    },
+    {
+      "titulo": "Escala",
+      "campo": "escala"
+    },
+    {
+      "titulo": "Mensuração / codificação",
+      "campo": "codificacao"
+    },
+    {
+      "titulo": "Pergunta",
+      "campo": "pergunta"
+    },
+    {
+      "titulo": "Fundamentação",
+      "campo": "fundamentacao"
+    }
+  ],
+  "rotulosCartao": {
+    "base": "Base",
+    "escala": "Escala",
+    "tratamento": "Tratamento"
+  },
+  "itens": [
+    {
+      "cod": "01",
+      "dim": "Consumidor",
+      "variavel": "Consentimento e aceite dos termos",
+      "pergunta": "Termo de consentimento livre e esclarecido (tela inicial)",
+      "tipo": "Nominal (filtro)",
+      "escala": "Aceite obrigatório",
+      "codificacao": "Exclusão de respostas não consentidas",
+      "fundamentacao": "Res. CNS 510/2016; LGPD"
+    },
+    {
+      "cod": "02",
+      "dim": "Consumidor",
+      "variavel": "Idade cronológica",
+      "pergunta": "Qual a sua idade?",
+      "tipo": "Discreta (contagem)",
+      "escala": "Anos completos",
+      "codificacao": "Média, DP, mín./máx.; Pearson entre grupos",
+      "fundamentacao": "Perfil do consumidor — KOTLER; KELLER (2018)"
+    },
+    {
+      "cod": "03",
+      "dim": "Consumidor",
+      "variavel": "Identidade de gênero",
+      "pergunta": "Como você se identifica?",
+      "tipo": "Nominal",
+      "escala": "4 categorias",
+      "codificacao": "Frequência absoluta e relativa; χ²",
+      "fundamentacao": "Perfil do consumidor — KOTLER; KELLER (2018)"
+    },
+    {
+      "cod": "04",
+      "dim": "Consumidor",
+      "variavel": "Grau de escolaridade",
+      "pergunta": "Qual seu grau de escolaridade concluído ou em andamento?",
+      "tipo": "Ordinal",
+      "escala": "5 níveis",
+      "codificacao": "Frequência relativa; moda",
+      "fundamentacao": "Perfil do consumidor — KOTLER; KELLER (2018)"
+    },
+    {
+      "cod": "05",
+      "dim": "Consumidor",
+      "variavel": "Tempo de prática na modalidade",
+      "pergunta": "Há quantos meses você frequenta as aulas?",
+      "tipo": "Discreta (contagem)",
+      "escala": "Meses",
+      "codificacao": "Média, DP; ANOVA de um fator",
+      "fundamentacao": "Lealdade e retenção — McKENNA (1992)"
+    },
+    {
+      "cod": "10",
+      "dim": "Consumidor",
+      "variavel": "Portfólio de atividades concomitantes",
+      "pergunta": "Quais outras atividades físicas você pratica atualmente?",
+      "tipo": "Nominal múltipla",
+      "escala": "Multi-resposta",
+      "codificacao": "Frequência relativa sobre n; χ² por perfil",
+      "fundamentacao": "Concorrência substituta — PORTER (2004)"
+    },
+    {
+      "cod": "—",
+      "dim": "Consumidor",
+      "variavel": "Localização contextualizada",
+      "pergunta": "Bairro e estabelecimento (parâmetro oculto do link coletor)",
+      "tipo": "Nominal",
+      "escala": "Captura nativa",
+      "codificacao": "Frequência por bairro; análise de praça",
+      "fundamentacao": "Praça / canais — LAS CASAS (2019)"
+    },
+    {
+      "cod": "06",
+      "dim": "Promoção",
+      "variavel": "Canal de descoberta da modalidade",
+      "pergunta": "Como você conheceu o Dance Forrónejo?",
+      "tipo": "Nominal",
+      "escala": "6 categorias",
+      "codificacao": "Frequência relativa; χ² por ambiente",
+      "fundamentacao": "Promoção — KOTLER; KELLER (2018)"
+    },
+    {
+      "cod": "07",
+      "dim": "Promoção",
+      "variavel": "Acurácia da comunicação da marca",
+      "pergunta": "O que você achou na primeira vez em que foi a uma aula?",
+      "tipo": "Ordinal",
+      "escala": "3 pontos",
+      "codificacao": "Frequência relativa; moda",
+      "fundamentacao": "Brand awareness — KOTLER; KELLER (2018)"
+    },
+    {
+      "cod": "08",
+      "dim": "Promoção",
+      "variavel": "Redes sociais de consumo de conteúdo",
+      "pergunta": "Em quais redes sociais você consome conteúdo?",
+      "tipo": "Nominal múltipla",
+      "escala": "Multi-resposta",
+      "codificacao": "Frequência relativa; χ²",
+      "fundamentacao": "Promoção digital — KOTLER; KELLER (2018)"
+    },
+    {
+      "cod": "09",
+      "dim": "Promoção",
+      "variavel": "Preferência de formato de conteúdo",
+      "pergunta": "Que tipo de conteúdo você prefere ver?",
+      "tipo": "Nominal múltipla",
+      "escala": "Multi-resposta",
+      "codificacao": "Frequência relativa",
+      "fundamentacao": "Promoção digital — KOTLER; KELLER (2018)"
+    },
+    {
+      "cod": "RO-05",
+      "dim": "Promoção",
+      "variavel": "Taxa de engajamento orgânico",
+      "pergunta": "Observação de posts públicos no Instagram",
+      "tipo": "Razão (%)",
+      "escala": "Percentual",
+      "codificacao": "Média por formato; ANOVA entre formatos",
+      "fundamentacao": "Promoção digital — KOTLER; KELLER (2018)"
+    },
+    {
+      "cod": "11",
+      "dim": "Praça",
+      "variavel": "Estrutura de canais de consumo atual",
+      "pergunta": "Em qual desses ambientes você faz ou já fez aulas de dança regularmente?",
+      "tipo": "Nominal múltipla",
+      "escala": "Multi-resposta",
+      "codificacao": "Frequência relativa; combinações de canais",
+      "fundamentacao": "Praça / canais — LAS CASAS (2019)"
+    },
+    {
+      "cod": "12",
+      "dim": "Praça",
+      "variavel": "Demanda por canais não atendidos",
+      "pergunta": "Em qual ambiente você faria aulas, mas não há oferta?",
+      "tipo": "Nominal múltipla",
+      "escala": "Multi-resposta + aberta",
+      "codificacao": "Frequência relativa; análise de conteúdo",
+      "fundamentacao": "Praça / canais — LAS CASAS (2019)"
+    },
+    {
+      "cod": "13",
+      "dim": "Praça",
+      "variavel": "Conveniência logística",
+      "pergunta": "Quão conveniente é a localização, os dias e os horários das aulas?",
+      "tipo": "Ordinal",
+      "escala": "Likert 5 pontos",
+      "codificacao": "Média ponderada, DP; ANOVA de um fator",
+      "fundamentacao": "Praça / canais — LAS CASAS (2019)"
+    },
+    {
+      "cod": "RO-03",
+      "dim": "Praça",
+      "variavel": "Pressão competitiva interna",
+      "pergunta": "Grade e horários da própria unidade",
+      "tipo": "Discreta (contagem)",
+      "escala": "Nº de aulas/semana",
+      "codificacao": "Descritiva; tabela comparativa",
+      "fundamentacao": "Rivalidade setorial — PORTER (2004)"
+    },
+    {
+      "cod": "RO-04",
+      "dim": "Praça",
+      "variavel": "Pressão competitiva geográfica",
+      "pergunta": "Grades das academias vizinhas",
+      "tipo": "Discreta (contagem)",
+      "escala": "Nº de aulas/semana",
+      "codificacao": "Descritiva; mapeamento de sobreposição",
+      "fundamentacao": "Rivalidade setorial — PORTER (2004)"
+    },
+    {
+      "cod": "14",
+      "dim": "Produto",
+      "variavel": "Adequação do ambiente e conforto da aula",
+      "pergunta": "Como você avalia som, complexidade dos passos e intensidade?",
+      "tipo": "Ordinal",
+      "escala": "Likert 5 pontos",
+      "codificacao": "Média, DP; IPA; gap competitivo",
+      "fundamentacao": "Produto ampliado — KOTLER; KELLER (2018)"
+    },
+    {
+      "cod": "16",
+      "dim": "Produto",
+      "variavel": "Indicação e advocacy",
+      "pergunta": "Você já recomendou a modalidade para alguma pessoa próxima?",
+      "tipo": "Nominal",
+      "escala": "Sim / Não / Converteu",
+      "codificacao": "Frequência relativa; χ² por perfil",
+      "fundamentacao": "Marketing de relacionamento — McKENNA (1992)"
+    },
+    {
+      "cod": "17",
+      "dim": "Produto",
+      "variavel": "Fatores de motivação para adesão",
+      "pergunta": "Ordene os fatores que motivaram sua primeira aula",
+      "tipo": "Ordinal (postos 1–5)",
+      "escala": "Ranking de 5",
+      "codificacao": "5-4-3-2-1; soma de postos e média ponderada",
+      "fundamentacao": "Produto — KOTLER; KELLER (2018)"
+    },
+    {
+      "cod": "18",
+      "dim": "Produto",
+      "variavel": "Importância declarada dos atributos",
+      "pergunta": "Ordene os atributos mais importantes numa aula de dança fitness",
+      "tipo": "Ordinal (postos 1–5)",
+      "escala": "Ranking de 5",
+      "codificacao": "Soma de postos; eixo de importância da IPA",
+      "fundamentacao": "IPA — MARTILLA; JAMES (1977)"
+    },
+    {
+      "cod": "19",
+      "dim": "Produto",
+      "variavel": "Diferencial percebido vs. concorrentes",
+      "pergunta": "O que diferencia o Dance Forrónejo de outras modalidades?",
+      "tipo": "Ordinal (postos 1–5)",
+      "escala": "Ranking de 5",
+      "codificacao": "Soma de postos; ranking médio",
+      "exclusivo": "Somente versões QDF",
+      "fundamentacao": "Diferenciação — PORTER (2004)"
+    },
+    {
+      "cod": "20–28",
+      "dim": "Produto",
+      "variavel": "Avaliação multidimensional do core do serviço",
+      "pergunta": "Carisma, coreografia, facilidade, bem-estar, intensidade, progressão, técnica, música e comunidade",
+      "tipo": "Intervalar (diferencial semântico)",
+      "escala": "Controle deslizante 0–100",
+      "codificacao": "Média por atributo; eixo de desempenho da IPA; gap",
+      "fundamentacao": "IPA — MARTILLA; JAMES (1977)"
+    },
+    {
+      "cod": "15",
+      "dim": "Preço",
+      "variavel": "Custo-benefício da mensalidade paga",
+      "pergunta": "O valor que você paga compensa pelo que recebe?",
+      "tipo": "Ordinal",
+      "escala": "Likert 5 pontos",
+      "codificacao": "Frequência relativa; Spearman vs. idade",
+      "exclusivo": "Versões de condomínio",
+      "fundamentacao": "Preço e valor percebido — KOTLER; KELLER (2018)"
+    },
+    {
+      "cod": "15",
+      "dim": "Preço",
+      "variavel": "Custo-benefício comparado entre modalidades",
+      "pergunta": "Ordene as atividades que mais compensam a mensalidade",
+      "tipo": "Ordinal (postos 1–5)",
+      "escala": "Ranking de 5",
+      "codificacao": "Soma de postos; ranking médio",
+      "exclusivo": "Versões de academia",
+      "fundamentacao": "Preço e valor percebido — KOTLER; KELLER (2018)"
+    },
+    {
+      "cod": "RO-02",
+      "dim": "Preço",
+      "variavel": "Mensalidade real praticada",
+      "pergunta": "Valor cobrado pelos estabelecimentos observados",
+      "tipo": "Razão (R$/mês)",
+      "escala": "Reais",
+      "codificacao": "Tabela comparativa; posicionamento relativo",
+      "fundamentacao": "Posicionamento de preço — PORTER (2004)"
+    },
+    {
+      "cod": "29",
+      "dim": "Qualitativa",
+      "variavel": "Críticas, dores e comentários livres",
+      "pergunta": "Tem algo que não foi perguntado, mas que você gostaria de dizer?",
+      "tipo": "Texto aberto",
+      "escala": "Livre",
+      "codificacao": "Análise de conteúdo categorial (BARDIN)",
+      "fundamentacao": "Análise de conteúdo — BARDIN (2011)"
+    }
+  ],
+  "nota": "Quadro completo no Apêndice A — Matriz Consolidada de Variáveis. Instrumentos integrais nos Apêndices C e D; roteiro de observação no Apêndice E."
+}

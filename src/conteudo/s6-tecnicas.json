@@ -1,0 +1,447 @@
+{
+  "_leiaMe": "Aba 06. 'graficos' guarda títulos, notas e rótulos de eixo; as séries numéricas ficam em 'dados'.",
+  "tecnicas": [
+    {
+      "nome": "Sumarização",
+      "resumo": "Estatística descritiva univariada sobre todas as variáveis.",
+      "detalhes": [
+        "Nominais e ordinais: frequências absolutas e relativas, moda.",
+        "Intervalares e de razão: média, mediana, desvio-padrão, mínimo e máximo.",
+        "Ranking por ordenação convertido em escore contínuo: 5 pontos para o 1º lugar até 1 ponto para o 5º.",
+        "Diferencial semântico (0–100): média e mediana por atributo e por grupo."
+      ]
+    },
+    {
+      "nome": "Associação",
+      "resumo": "Análises bivariadas e desempenho comparado.",
+      "detalhes": [
+        "IPA de Martilla e James (1977): importância × desempenho em quatro quadrantes, com cortes nas médias do grupo.",
+        "Gap competitivo: subtração atributo a atributo entre modalidades.",
+        "Qui-quadrado (χ²) para nominais, com p < 0,05.",
+        "Pearson (r) para contínuas e Spearman (ρ) para ordinais versus idade.",
+        "ANOVA de um fator para comparação de médias entre grupos.",
+        "Análise fatorial exploratória descritiva, em caráter complementar."
+      ]
+    },
+    {
+      "nome": "Agrupamento",
+      "resumo": "Segmentação descritiva — não estatística — dos respondentes.",
+      "detalhes": [
+        "Grupos principais definidos por ambiente de prática e por modalidade.",
+        "Subgrupos por faixa etária, escolaridade e consumo cruzado de modalidades.",
+        "Base para a descrição de personas e dos quatro grupos estratégicos (A–D).",
+        "Caráter descritivo justificado pelo tamanho amostral obtido."
+      ]
+    },
+    {
+      "nome": "Análise qualitativa",
+      "resumo": "Tratamento do material textual da questão aberta final.",
+      "detalhes": [
+        "Pré-análise e leitura flutuante do corpus.",
+        "Categorização temática por recorrência e pertinência aos objetivos.",
+        "Interpretação orientada pelos resultados quantitativos.",
+        "Função ilustrativa e de aprofundamento — não analisada de forma independente."
+      ]
+    }
+  ],
+  "aplicacoes": {
+    "titulo": "As técnicas aplicadas aos dados",
+    "descricao": "Cinco saídas reais da planilha de análise. A matriz de importância × desempenho abre a série por concentrar, sozinha, os dois eixos que orientam toda a leitura de Produto."
+  },
+  "graficos": {
+    "ipa": {
+      "titulo": "Associação — Matriz Importância × Desempenho",
+      "nota": "QDF-A. Cortes nas médias do próprio grupo (Martilla e James, 1977).",
+      "eixoX": "Importância declarada (0–5)",
+      "eixoY": "Desempenho percebido (0–100)",
+      "corteImportancia": "média de importância",
+      "corteDesempenho": "média de desempenho",
+      "rotulosTooltip": {
+        "importancia": "Importância",
+        "desempenho": "Desempenho"
+      },
+      "quadrantes": [
+        {
+          "cor": "terra",
+          "rotulo": "Manutenção — alta importância, alto desempenho"
+        },
+        {
+          "cor": "rubro",
+          "rotulo": "Atenção prioritária — alta importância, baixo desempenho"
+        },
+        {
+          "cor": "ambar",
+          "rotulo": "Excesso relativo — baixa importância, alto desempenho"
+        },
+        {
+          "cor": "milho",
+          "rotulo": "Baixa prioridade — baixa importância, baixo desempenho"
+        }
+      ]
+    },
+    "gap": {
+      "titulo": "Associação — Gap competitivo por atributo",
+      "nota": "Desempenho QDF-A menos QZ-C, escala de diferencial semântico 0–100.",
+      "rodape": "Nenhum gap alcançou significância na ANOVA — leitura descritiva.",
+      "rotuloGap": "Gap"
+    },
+    "conveniencia": {
+      "titulo": "Sumarização — Conveniência logística (QDF-A)",
+      "nota": "Distribuição da escala Likert de 5 pontos, em % do grupo."
+    },
+    "fatores": {
+      "titulo": "Sumarização — Fatores de adesão à primeira aula",
+      "nota": "Ranking de 5 convertido em escore ponderado (5-4-3-2-1) e reduzido a média.",
+      "series": {
+        "qdfa": "QDF-A",
+        "qzc": "QZ-C"
+      }
+    },
+    "faixaEtaria": {
+      "titulo": "Agrupamento — Distribuição etária por canal",
+      "nota": "Percentual dentro de cada grupo. Base do agrupamento descritivo por ambiente.",
+      "rodape": "81,82% dos alunos de condomínio concentram-se entre 45 e 64 anos.",
+      "sufixoTooltip": "anos",
+      "series": {
+        "qdfa": "QDF-A (academia)",
+        "qzc": "QZ-C (condomínio)"
+      }
+    }
+  },
+  "testes": {
+    "titulo": "Testes de significância",
+    "subtitulo": "Nível adotado: p < 0,05 · clique para abrir",
+    "introducao": "Com n = 60, boa parte dos testes sobre a amostra inteira não alcança significância — o que é um achado sobre o desenho, não apenas sobre os dados. Os contrastes entre grupos estratégicos e seus complementos rendem os resultados mais fortes.",
+    "amostraCompleta": {
+      "titulo": "Amostra completa",
+      "colunas": [
+        "Teste",
+        "Variável",
+        "Estatística",
+        "p-valor",
+        "g.l.",
+        "n",
+        "Leitura"
+      ],
+      "rotuloSignificativo": "significativo",
+      "rotuloNaoSignificativo": "n.s.",
+      "linhas": [
+        {
+          "teste": "χ²",
+          "variavel": "Canal de descoberta",
+          "valor": "36,06",
+          "p": "< 0,001",
+          "gl": 5,
+          "n": 60,
+          "sig": true
+        },
+        {
+          "teste": "ρ",
+          "variavel": "Conveniência — dias (QZ-C)",
+          "valor": "−0,64",
+          "p": "0,03",
+          "gl": "—",
+          "n": 11,
+          "sig": true
+        },
+        {
+          "teste": "ρ",
+          "variavel": "Conveniência — horários (QDF-A)",
+          "valor": "0,29",
+          "p": "0,04",
+          "gl": "—",
+          "n": 49,
+          "sig": true
+        },
+        {
+          "teste": "χ²",
+          "variavel": "Escolaridade",
+          "valor": "3,74",
+          "p": "0,59",
+          "gl": 5,
+          "n": 60,
+          "sig": false
+        }
+      ]
+    },
+    "porGrupo": {
+      "titulo": "Grupos estratégicos × complemento",
+      "descricao": "ANOVA de um fator. A1 = converteu uma recomendação · B1 = deseja o canal de condomínio · C1 = melhor custo-benefício percebido.",
+      "colunas": [
+        "Grupo",
+        "Survey",
+        "Variável",
+        "No grupo",
+        "Fora",
+        "F",
+        "g.l.",
+        "p",
+        "n"
+      ],
+      "linhas": [
+        {
+          "grupo": "A1",
+          "rotulo": "Converteu uma recomendação",
+          "survey": "QZ-C",
+          "variavel": "Desempenho — Intensidade da aula",
+          "dentro": "70,17",
+          "fora": "92,67",
+          "valor": "9,09",
+          "gl": "1, 7",
+          "p": "0,019",
+          "n": 9,
+          "sig": true,
+          "leitura": "Quem trouxe alguém percebe a aula como bem menos intensa."
+        },
+        {
+          "grupo": "C1",
+          "rotulo": "Melhor custo-benefício percebido",
+          "survey": "QZ-C",
+          "variavel": "Conveniência — Localização",
+          "dentro": "5,00",
+          "fora": "4,67",
+          "valor": "7,36",
+          "gl": "1, 9",
+          "p": "0,024",
+          "n": 11,
+          "sig": true,
+          "leitura": "Custo-benefício alto anda junto com localização no máximo da escala."
+        },
+        {
+          "grupo": "A1",
+          "rotulo": "Converteu uma recomendação",
+          "survey": "QZ-C",
+          "variavel": "Importância — Seleção musical",
+          "dentro": "3,80",
+          "fora": "2,33",
+          "valor": "6,98",
+          "gl": "1, 6",
+          "p": "0,038",
+          "n": 8,
+          "sig": true,
+          "leitura": "Quem recomenda dá muito mais peso ao repertório musical."
+        },
+        {
+          "grupo": "B1",
+          "rotulo": "Deseja o canal de condomínio",
+          "survey": "QDF-A",
+          "variavel": "Desempenho — Qualidade técnica do professor",
+          "dentro": "90,93",
+          "fora": "98,59",
+          "valor": "4,24",
+          "gl": "1, 30",
+          "p": "0,048",
+          "n": 32,
+          "sig": true,
+          "leitura": "Quem quer migrar para o condomínio avalia o professor abaixo dos demais."
+        }
+      ]
+    },
+    "ressalva": {
+      "rotulo": "Ressalva:",
+      "texto": "três dos quatro contrastes vêm do QZ-C, cujos subgrupos têm de 3 a 8 respondentes. São indícios a investigar, não conclusões. O contraste de B1 (n = 32) é o único com base amostral confortável."
+    }
+  },
+  "dados": {
+    "desempenho": [
+      {
+        "atributo": "Carisma do professor",
+        "qdfa": 95.25,
+        "qzc": 88.5,
+        "gap": 6.75
+      },
+      {
+        "atributo": "Qualidade técnica",
+        "qdfa": 95,
+        "qzc": 94.44,
+        "gap": 0.56
+      },
+      {
+        "atributo": "Bem-estar emocional",
+        "qdfa": 92.91,
+        "qzc": 95.22,
+        "gap": -2.32
+      },
+      {
+        "atributo": "Estilo das coreografias",
+        "qdfa": 90.31,
+        "qzc": 89.78,
+        "gap": 0.53
+      },
+      {
+        "atributo": "Seleção musical",
+        "qdfa": 89.35,
+        "qzc": 86,
+        "gap": 3.35
+      },
+      {
+        "atributo": "Progressão técnica",
+        "qdfa": 89.06,
+        "qzc": 91.11,
+        "gap": -2.05
+      },
+      {
+        "atributo": "Facilidade de aprendizado",
+        "qdfa": 87.28,
+        "qzc": 85.67,
+        "gap": 1.61
+      },
+      {
+        "atributo": "Senso de comunidade",
+        "qdfa": 86.71,
+        "qzc": 93.56,
+        "gap": -6.85
+      },
+      {
+        "atributo": "Intensidade da aula",
+        "qdfa": 85.97,
+        "qzc": 77.67,
+        "gap": 8.3
+      }
+    ],
+    "ipa": [
+      {
+        "atributo": "Carisma do professor",
+        "importancia": 4.61,
+        "desempenho": 95.25
+      },
+      {
+        "atributo": "Facilidade de aprendizado",
+        "importancia": 3.48,
+        "desempenho": 87.28
+      },
+      {
+        "atributo": "Estilo das coreografias",
+        "importancia": 3.43,
+        "desempenho": 90.31
+      },
+      {
+        "atributo": "Intensidade",
+        "importancia": 2.29,
+        "desempenho": 85.97
+      },
+      {
+        "atributo": "Senso de comunidade",
+        "importancia": 2.06,
+        "desempenho": 86.71
+      }
+    ],
+    "ipaCortes": {
+      "importancia": 3.17,
+      "desempenho": 89.1
+    },
+    "fatoresAdesao": [
+      {
+        "fator": "Bem-estar emocional",
+        "qdfa": 4.54,
+        "qzc": 4.67
+      },
+      {
+        "fator": "Vontade de aprender a dançar",
+        "qdfa": 3.69,
+        "qzc": 2.3
+      },
+      {
+        "fator": "Condicionamento físico",
+        "qdfa": 3.04,
+        "qzc": 3.5
+      },
+      {
+        "fator": "Convívio social",
+        "qdfa": 2.44,
+        "qzc": 3
+      },
+      {
+        "fator": "Melhoria estética",
+        "qdfa": 2.12,
+        "qzc": 2
+      }
+    ],
+    "faixaEtaria": [
+      {
+        "faixa": "≤24",
+        "qdfa": 2.04,
+        "qzc": 0
+      },
+      {
+        "faixa": "25–34",
+        "qdfa": 6.12,
+        "qzc": 0
+      },
+      {
+        "faixa": "35–44",
+        "qdfa": 16.33,
+        "qzc": 9.09
+      },
+      {
+        "faixa": "45–54",
+        "qdfa": 24.49,
+        "qzc": 27.27
+      },
+      {
+        "faixa": "55–64",
+        "qdfa": 20.41,
+        "qzc": 54.55
+      },
+      {
+        "faixa": "65+",
+        "qdfa": 30.61,
+        "qzc": 9.09
+      }
+    ],
+    "conveniencia": [
+      {
+        "dim": "Localização",
+        "muitoInconv": 12.5,
+        "inconv": 0,
+        "neutro": 4.17,
+        "conv": 35.42,
+        "muitoConv": 47.92
+      },
+      {
+        "dim": "Dias das aulas",
+        "muitoInconv": 12.24,
+        "inconv": 2.04,
+        "neutro": 8.16,
+        "conv": 38.78,
+        "muitoConv": 38.78
+      },
+      {
+        "dim": "Horários das aulas",
+        "muitoInconv": 16.33,
+        "inconv": 2.04,
+        "neutro": 8.16,
+        "conv": 46.94,
+        "muitoConv": 26.53
+      }
+    ],
+    "faixasLikert": [
+      {
+        "chave": "muitoInconv",
+        "rotulo": "Muito inconveniente",
+        "cor": "terra"
+      },
+      {
+        "chave": "inconv",
+        "rotulo": "Inconveniente",
+        "cor": "brasa"
+      },
+      {
+        "chave": "neutro",
+        "rotulo": "Neutro",
+        "cor": "ambar"
+      },
+      {
+        "chave": "conv",
+        "rotulo": "Conveniente",
+        "cor": "milho"
+      },
+      {
+        "chave": "muitoConv",
+        "rotulo": "Muito conveniente",
+        "cor": "rubro"
+      }
+    ]
+  },
+  "nota": "Fonte: abas “Associação”, “Associação A”, “Associação B” e “Associação C” da planilha de análise. Os valores de F e os graus de liberdade vêm da planilha; os p-valores foram obtidos da distribuição F correspondente."
+}

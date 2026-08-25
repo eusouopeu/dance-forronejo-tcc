@@ -1,0 +1,164 @@
+{
+  "_leiaMe": "Aba 03. Os números do plano amostral estão em 'amostragem'; o card de referência usa o mínimo do Plano A.",
+  "ficha": [
+    {
+      "rotulo": "Natureza",
+      "valor": "Descritivo-exploratória"
+    },
+    {
+      "rotulo": "Abordagem",
+      "valor": "Quantitativa, com componente qualitativo complementar"
+    },
+    {
+      "rotulo": "Delineamento",
+      "valor": "Transversal — coleta em um único momento"
+    },
+    {
+      "rotulo": "Recorte temporal",
+      "valor": "Maio a junho de 2026"
+    },
+    {
+      "rotulo": "Recorte geográfico",
+      "valor": "Salvador — BA"
+    },
+    {
+      "rotulo": "Unidade de análise",
+      "valor": "Aluno de modalidade de dança fitness"
+    }
+  ],
+  "instrumentos": {
+    "titulo": "Instrumentos de coleta",
+    "descricao": "Duas fontes complementares: os questionários captam percepção e preferência; a observação fornece referência objetiva sobre o ambiente competitivo.",
+    "colunas": [
+      "Instrumento",
+      "Público",
+      "Natureza",
+      "Uso no trabalho",
+      "Duração"
+    ],
+    "itens": [
+      {
+        "sigla": "Entrevista",
+        "nome": "Entrevista exploratória com o gestor",
+        "publico": "Fundador / instrutor-chefe",
+        "natureza": "Qualitativa, não estruturada",
+        "uso": "Diagnóstico de macro e microambiente; triangulação dos achados quantitativos",
+        "duracao": "1h18min"
+      },
+      {
+        "sigla": "QDF-A / QZ-A",
+        "nome": "Questionário de alunos de academia",
+        "publico": "Alunos em academias e estúdios",
+        "natureza": "Quantitativa, survey estruturado",
+        "uso": "Análise dos resultados — todas as cinco dimensões",
+        "duracao": "12 a 18 min"
+      },
+      {
+        "sigla": "QDF-C / QZ-C",
+        "nome": "Questionário de alunos de condomínio",
+        "publico": "Alunos em condomínios",
+        "natureza": "Quantitativa, survey estruturado",
+        "uso": "Análise dos resultados — todas as cinco dimensões",
+        "duracao": "12 a 18 min"
+      },
+      {
+        "sigla": "RO",
+        "nome": "Roteiro de observação de dados secundários",
+        "publico": "Estabelecimentos concorrentes",
+        "natureza": "Observação estruturada de dados públicos",
+        "uso": "Preço praticado, grade de aulas e presença digital",
+        "duracao": "—"
+      }
+    ]
+  },
+  "validacao": {
+    "titulo": "Validação de conteúdo e pré-teste",
+    "etapas": [
+      {
+        "etapa": "1",
+        "titulo": "Validação por IA generativa",
+        "detalhe": "Três modelos avaliaram cobertura das dimensões, coerência entre escalas e variáveis e adequação dos enunciados aos construtos."
+      },
+      {
+        "etapa": "2",
+        "titulo": "Validação por especialistas do setor",
+        "detalhe": "Dois profissionais de dança avaliaram a adequação das perguntas e alternativas ao contexto da modalidade."
+      },
+      {
+        "etapa": "3",
+        "titulo": "Validação acadêmica",
+        "detalhe": "Dois acadêmicos de administração analisaram conteúdo e potencial de dúvida e abandono."
+      },
+      {
+        "etapa": "4",
+        "titulo": "Pré-teste",
+        "detalhe": "Dois instrutores em protocolo think aloud e dez alunos fora da amostra principal. Avaliou clareza, tempo, lógica condicional e pontos de abandono."
+      }
+    ]
+  },
+  "amostragem": {
+    "titulo": "Plano amostral",
+    "rotulos": {
+      "unidade": "Unidade amostral",
+      "tipo": "Tipo",
+      "N": "População estimada (N)",
+      "minimo": "Mínimo calculado (n)",
+      "executado": "executado",
+      "naoExecutado": "não ativado"
+    },
+    "planoA": {
+      "titulo": "Plano A — censo por turma",
+      "unidade": "8 turmas regulares do instrutor-fundador",
+      "tipo": "Não probabilística por conveniência",
+      "N": 100,
+      "minimo": 74,
+      "justificativa": "Cobertura de múltiplos canais, dispersão geográfica em Salvador e acesso garantido via grupos de WhatsApp por turma."
+    },
+    "planoB": {
+      "titulo": "Plano B — conglomerados em dois estágios",
+      "unidade": "Turmas de instrutores credenciados sorteados",
+      "tipo": "Probabilística por conglomerados",
+      "N": 300,
+      "minimo": 143,
+      "justificativa": "Ativado caso o Plano A não atingisse o mínimo. Não foi executado por ausência de adesão dos instrutores."
+    }
+  },
+  "formula": {
+    "rotulo": "Fórmula de dimensionamento — populações finitas (Barbetta, 2012)",
+    "expressao": "n = (N · Z² · p · q) ÷ [ e² · (N − 1) + Z² · p · q ]",
+    "parametros": "Z = 1,645 (90% de confiança) · p = q = 0,5 · e = 0,05"
+  },
+  "coleta": {
+    "titulo": "O que a coleta produziu",
+    "descricao": "O desenho previa quatro grupos, cruzando duas modalidades e dois ambientes. Retornaram apenas os dois grupos diagonalmente opostos — a limitação mais direta do estudo.",
+    "grupos": [
+      {
+        "grupo": "QDF-A",
+        "rotulo": "Dance Forrónejo em academia",
+        "n": 49,
+        "cor": "terra"
+      },
+      {
+        "grupo": "QZ-C",
+        "rotulo": "Zumba em condomínio",
+        "n": 11,
+        "cor": "brasa"
+      },
+      {
+        "grupo": "QDF-C",
+        "rotulo": "Dance Forrónejo em condomínio",
+        "n": 0,
+        "cor": "areia"
+      },
+      {
+        "grupo": "QZ-A",
+        "rotulo": "Zumba em academia",
+        "n": 0,
+        "cor": "areia"
+      }
+    ],
+    "rotuloTotal": "respondentes obtidos",
+    "rotuloMinimo": "mínimo para o Plano A com erro de 5% e 90% de confiança"
+  },
+  "nota": "Coleta entre 8 e 16 de junho de 2026, por QR code presencial e link exclusivo por turma no WhatsApp. O TCLE é a primeira tela do instrumento, com aceite obrigatório. Conformidade com a Resolução CNS 510/2016 e com a LGPD."
+}
