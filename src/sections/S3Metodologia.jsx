@@ -4,21 +4,25 @@ import { TituloSecao, Cartao, Reveal, Contador, Nota, Etiqueta } from "../compon
 
 const R = c.amostragem.rotulos;
 
-function PlanoAmostral({ plano, executado }) {
+function PlanoAmostral({ plano }) {
+  const executado = plano.situacao === "executado";
+  const dim = plano.dimensionamento;
+
   return (
-    <Cartao tom={executado ? "claro" : "areia"} className={`h-full p-5 ${executado ? "" : "opacity-75"}`}>
+    <Cartao tom="claro" className="flex h-full flex-col p-5">
       <div className="flex items-start justify-between gap-3">
-        <h3 className="font-display text-lg font-bold text-terra-900">{plano.titulo}</h3>
+        <h3 className="font-display text-lg leading-snug font-bold text-terra-900">{plano.titulo}</h3>
         <Etiqueta cor={executado ? cor("brasa") : cor("areia")} escura={executado}>
           {executado ? R.executado : R.naoExecutado}
         </Etiqueta>
       </div>
+
       <dl className="mt-4 space-y-2 text-sm">
         {[
-          [R.unidade, plano.unidade],
-          [R.tipo, plano.tipo],
+          [R.natureza, plano.natureza],
+          [R.unidadeAmostral, plano.unidadeAmostral],
+          [R.unidadeObservacao, plano.unidadeObservacao],
           [R.N, plano.N],
-          [R.minimo, plano.minimo],
         ].map(([k, v]) => (
           <div key={k} className="flex justify-between gap-4 border-b border-areia-200 pb-1.5">
             <dt className="shrink-0 text-terra-700/70">{k}</dt>
@@ -26,6 +30,43 @@ function PlanoAmostral({ plano, executado }) {
           </div>
         ))}
       </dl>
+
+      <p className="mt-4 text-xs font-semibold tracking-wider text-terra-700/60 uppercase">{R.estagios}</p>
+      <ol className="mt-1.5 space-y-1">
+        {plano.estagios.map((e) => (
+          <li key={e} className="flex items-start gap-2 text-xs leading-relaxed text-terra-800/85">
+            <span className="mt-1.5 h-1 w-1 shrink-0 rounded-full bg-ambar-400" />
+            {e}
+          </li>
+        ))}
+      </ol>
+
+      {/* Dimensionamento: um n mínimo, ou a ressalva de que a fórmula não cabe. */}
+      <div
+        className="mt-4 rounded-lg border-l-4 p-3"
+        style={{
+          borderLeftColor: dim.aplicavel ? cor("ambar") : cor("rubro"),
+          backgroundColor: "var(--color-areia-100)",
+        }}
+      >
+        <div className="flex items-baseline justify-between gap-3">
+          <span className="text-xs font-semibold tracking-wider text-terra-700/60 uppercase">{dim.rotulo}</span>
+          <span
+            className="font-display text-lg font-bold tabular-nums"
+            style={{ color: dim.aplicavel ? cor("terraEscuro") : cor("rubro") }}
+          >
+            {dim.valor}
+          </span>
+        </div>
+        <p className="mt-1 text-xs leading-relaxed text-terra-800/85">{dim.ressalva}</p>
+      </div>
+
+      {plano.resultado && (
+        <p className="mt-3 text-sm font-semibold text-brasa-600">
+          {R.resultado}: <span className="font-normal text-terra-900">{plano.resultado}</span>
+        </p>
+      )}
+
       <p className="mt-3 text-xs leading-relaxed text-terra-700/75">{plano.justificativa}</p>
     </Cartao>
   );
@@ -101,10 +142,14 @@ export default function S3Metodologia() {
       {/* Amostragem */}
       <Reveal>
         <h2 className="mt-12 font-display text-2xl font-bold text-terra-800">{c.amostragem.titulo}</h2>
+        <p className="mt-1 mb-4 max-w-3xl text-sm text-terra-700/80">{c.amostragem.descricao}</p>
       </Reveal>
-      <div className="mt-4 grid gap-4 md:grid-cols-2">
-        <Reveal><PlanoAmostral plano={c.amostragem.planoA} executado /></Reveal>
-        <Reveal delay={100}><PlanoAmostral plano={c.amostragem.planoB} executado={false} /></Reveal>
+      <div className="grid gap-4 md:grid-cols-2">
+        {c.amostragem.planos.map((p, i) => (
+          <Reveal key={p.id} delay={i * 100}>
+            <PlanoAmostral plano={p} />
+          </Reveal>
+        ))}
       </div>
 
       <Reveal>
@@ -112,8 +157,28 @@ export default function S3Metodologia() {
           <p className="text-xs font-semibold tracking-wider text-terra-700/60 uppercase">{c.formula.rotulo}</p>
           <p className="mt-2 text-center font-mono text-base text-terra-900">{c.formula.expressao}</p>
           <p className="mt-2 text-center text-xs text-terra-700/75">{c.formula.parametros}</p>
+          <p className="mt-3 border-t border-areia-200 pt-3 text-xs leading-relaxed text-terra-800/85">
+            {c.formula.aviso}
+          </p>
         </Cartao>
       </Reveal>
+
+      {/* Nota metodológica */}
+      <Reveal>
+        <h3 className="mt-8 mb-3 font-display text-xl font-bold text-terra-800">
+          {c.amostragem.notaMetodologica.titulo}
+        </h3>
+      </Reveal>
+      <div className="grid gap-3 md:grid-cols-2">
+        {c.amostragem.notaMetodologica.itens.map((n, i) => (
+          <Reveal key={n.titulo} delay={i * 70}>
+            <div className="h-full rounded-lg border border-areia-200 bg-white p-4">
+              <h4 className="font-display text-sm font-bold text-rubro-600">{n.titulo}</h4>
+              <p className="mt-1.5 text-xs leading-relaxed text-terra-800/85">{n.texto}</p>
+            </div>
+          </Reveal>
+        ))}
+      </div>
 
       {/* Coleta realizada */}
       <Reveal>
@@ -157,7 +222,7 @@ export default function S3Metodologia() {
           </Cartao>
           <Cartao tom="escuro" className="flex flex-col justify-center p-6">
             <p className="font-display text-6xl leading-none font-bold text-ambar-300">
-              <Contador valor={c.amostragem.planoA.minimo} />
+              <Contador valor={60} sufixo="%" />
             </p>
             <p className="mt-1 text-sm">{c.coleta.rotuloMinimo}</p>
           </Cartao>

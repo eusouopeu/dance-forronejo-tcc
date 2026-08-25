@@ -41,7 +41,7 @@
       },
       {
         "eixo": "Acadêmica",
-        "destaque": false,
+        "destaque": true,
         "itens": [
           "Preenche lacuna da literatura de marketing esportivo, concentrada em marcas de alcance global, sobre modalidades fitness de base regional.",
           "Documenta a aplicação simultânea de PESTEL, Cinco Forças, SWOT e composto mercadológico a um caso real sob modelo B2B2C.",
@@ -50,7 +50,7 @@
       },
       {
         "eixo": "Social",
-        "destaque": false,
+        "destaque": true,
         "itens": [
           "Documenta o papel da dança em grupo como espaço de convívio e formação de laços para um público majoritariamente feminino e acima dos 45 anos.",
           "Contribui para a revitalização da musicalidade regional nordestina fora da sazonalidade junina.",
@@ -63,8 +63,8 @@
     "titulo": "O que o estudo não permite afirmar",
     "subtitulo": "limitações reconhecidas",
     "itens": [
-      "Amostra de 60 respondentes, inferior ao mínimo de 114 calculado para erro de 5% e confiança de 95%.",
-      "Amostragem não probabilística por conveniência: os resultados descrevem os grupos pesquisados e não estimam parâmetros populacionais.",
+      "Taxa de resposta de 60% (60 de 100 alunos matriculados nas oito turmas). Os 40 que não responderam podem diferir sistematicamente dos respondentes, e o desenho não permite estimar esse viés.",
+      "As turmas foram escolhidas intencionalmente, não sorteadas. Dentro delas houve censo, mas a não probabilidade na seleção das turmas impede estimar parâmetros populacionais: os resultados descrevem os grupos pesquisados.",
       "Comparação QDF-A × QZ-C cruza simultaneamente modalidade e canal — os efeitos não podem ser isolados.",
       "Potencial viés de conivência pela proximidade entre pesquisador, gestor e respondentes, consistente com o efeito de teto observado.",
       "Métricas de engajamento do Instagram são aproximação de dados públicos, sem acesso ao Instagram Insights."
